@@ -1,0 +1,56 @@
+.list-todo-container{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  
+}
+
+
+.list-todo-child{
+  
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  white-space: pre-wrap;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+textarea{
+  border:none;
+  resize: none;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+.list-todo-child .new {
+  background-color: aquamarine;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.save{
+  background-color: rgb(233, 233, 233);
+  border:none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  border:solid 4px #308d46;
+}
+
+.save:hover{
+  background-color: #308d46;
+  cursor: pointer;
+}
+
+.icon{
+  cursor: pointer;
+}
